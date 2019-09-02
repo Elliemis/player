@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="app.js"></script>
+	<style>
+		.progress {
+			border : 1px solid #ddd;
+			height: 15px;
+		}
+		
+		.bar {
+			width : calc(100% / 3);
+			height: 100%;
+			background : greenyellow;
+		}
+		.info {
+			display : flex;
+			justify-content: space-between;
+		}
+	</style>
+	<title>Document</title>
+</head>
+<body>
+	<div id="player">
+		<div class="info">
+			<span class="current-time"></span>
+			<span class="total-time"></span>
+		</div>
+		<div class="progress">
+			<div class="bar"></div>
+		</div>
+		<audio src="example.mp3"></audio>
+		<button class="play">재생</button>
+		<button class="stop">정지</button>
+	</div>
+</body>
+</html>
