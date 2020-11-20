@@ -1,0 +1,92 @@
+* {
+	margin     : 0;
+	padding    : 0;
+	box-sizing : border-box;
+	color      : inherit;
+}
+
+ul {
+	list-style : none;
+}
+
+.progress {
+	border : 1px solid #ddd;
+	height : 15px;
+}
+
+.bar {
+	width            : 0;
+	height           : 100%;
+	background-color : #ff0;
+}
+
+.time-info {
+	display         : flex;
+	justify-content : space-between;
+}
+
+.main-row {
+	display               : grid;
+	grid-template-columns : 1fr 1fr;
+	grid-gap              : 20px;
+}
+
+.container {
+	margin : 0 auto;
+	width  : 1200px;
+}
+
+#player .control-btn button {
+	width         : 28px;
+	height        : 28px;
+	background    : antiquewhite;
+	border        : 2px solid coral;
+	color         : coral;
+	border-radius : 4px;
+	outline: none;
+	cursor: pointer;
+}
+
+#playList {
+	border        : 1px solid #ddd;
+	border-radius : 6px;
+	padding       : 20px;
+}
+
+#playList .item-list {
+	display        : grid;
+	grid-gap       : 10px;
+	grid-auto-rows : 40px;
+	margin-bottom  : 10px;
+	height         : 400px;
+	overflow-y     : scroll;
+	box-shadow     : 2px 2px 2px 2px #0002;
+	border-radius  : 5px;
+	padding        : 10px;
+}
+
+#playList .item {
+	width            : 100%;
+	color            : white;
+	background-color : #5c6bc0;
+	padding          : 8px 12px;
+	border-radius    : 0.25rem;
+	text-overflow    : ellipsis;
+	white-space      : nowrap;
+	overflow         : hidden;
+	font-size        : 14px;
+	user-select      : none;
+}
+
+#playList .item.active {
+	background-color : #9575cd;
+}
+
+.control {
+	display               : grid;
+	grid-template-columns : 1fr 1fr;
+}
+
+#audioFile {
+	visibility : hidden;
+}
